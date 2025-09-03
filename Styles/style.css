@@ -1,0 +1,19 @@
+@import "tailwind.css";
+
+/* Google Fonts Classes */
+.hind-madurai-font{
+  font-family: "Hind Madurai", sans-serif;
+  font-style: normal;
+}
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
