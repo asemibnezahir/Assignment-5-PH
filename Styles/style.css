@@ -17,3 +17,31 @@
 }
 
 
+
+/* Important Customized Design 70-80 line Range*/
+#copy-btn{
+    border: 1px solid #5C5C5C;
+    color: #5C5C5C;
+    padding: 20px 45px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+#copy-btn:hover{
+    color: white;
+    background-color: black;
+}
+#call-btn{
+    color:white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 20px 50px;
+}
+#call-btn:hover{
+    border: 1px solid rgb(173, 168, 168);
+    background-color: rgb(173, 168, 168);
+}
+
+
+
+/* Small Screen Design */
+
