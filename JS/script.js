@@ -1,6 +1,3 @@
-// Blank Array of Object for call history
-const historyArray = [];
-
 // Heart Icon Clicking Function
 const hearts = document.getElementsByClassName('card-awesome');
 for(let heart of hearts)
@@ -48,7 +45,7 @@ for(let call of calls)
         // Completing the history adding
         const mainContainer = document.getElementById('main-container');
         const historyContainer = document.createElement('div');
-        historyContainer.classList.add('w-[300px]', 'mx-auto');
+        historyContainer.classList.add('w-[300px]', 'mx-auto' ,'for-removing');
         historyContainer.innerHTML = `
         <div class="single-history-card flex justify-between items-center p-[12px] bg-[#e7e3e3] rounded-[8px] mb-[10px]">
             <div class="info">
@@ -63,3 +60,13 @@ for(let call of calls)
     })
 }
 
+
+// History Section Clearing Feature
+const clear = document.getElementById('clear-btn');
+clear.addEventListener('click',function(){
+    const historys = document.querySelectorAll('.for-removing');
+    for(let history of historys)
+    {
+        history.remove();
+    }
+})
