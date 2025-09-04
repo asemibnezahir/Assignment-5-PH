@@ -45,7 +45,7 @@
                     <span class="inter-font font-bold text-[16px]" id="target-coin">100</span><img src="assets/coin.png" alt="Coin-Icon" class="h-[30px] w-[30px]">
                 </h1>
                 <h1 class="nav-menu flex justify-center items-center bg-[#00A63E] p-[10px] w-[120px] rounded-[50px] text-white inter-font font-semibold text-[16px]">
-                    <span>2</span>&nbsp;&nbsp;Copy
+                    <span id="target-copy">2</span>&nbsp;&nbsp;Copy
                 </h1>
             </div>
         </section>
@@ -57,13 +57,13 @@
         </section>
 
         <section class="history-btn-sec m-[20px] flex gap-8 justify-center lg:hidden max-sm:visible">
-            <button class="btn btn-outline btn-primary history-btn w-[120px]">Numbers</button>
-            <button class="btn btn-outline btn-primary history-btn w-[120px]">Call History</button>
+            <button class="btn btn-outline btn-primary history-btn w-[120px]" id="toggle-number">Numbers</button>
+            <button class="btn btn-outline btn-primary history-btn w-[120px]" id="toogle-history">Call History</button>
         </section>
     </header>
 
     <main class="bg-[#F5FFF6] w-full flex max-sm:items-center">
-        <section class="card-container p-[16px] flex-9/12 grid grid-cols-3 max-sm:place-items-center gap-4 max-sm:grid-cols-1">
+        <section class="card-container p-[16px] flex-9/12 grid grid-cols-3 max-sm:place-items-center gap-4 max-sm:grid-cols-1 max-sm:visible" id="_1stContainer">
             
             <div class="call-card w-[370px] bg-white p-[20px] rounded-[12px] drop-shadow drop-shadow-green-100">
                 <div class="card-nav flex justify-between items-center">

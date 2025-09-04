@@ -83,5 +83,33 @@ for(let copy of copys)
         navigator.clipboard.writeText(serviceNum);
 
         alert('Number Copied-' + serviceNum );
+
+        // Adding Count on Navbar
+        const copyNumber = parseInt(document.getElementById('target-copy').innerText);
+        const finalCopy = copyNumber+1;
+        document.getElementById('target-copy').innerText = finalCopy;
     })
 }
+
+
+
+
+
+// Handling Mobile Responsive by Toogling Call & History section with button
+const toogleNumber = document.getElementById('toggle-number');
+const toogleHistory = document.getElementById('toogle-history');
+const firstContainer = document.getElementById('_1stContainer');
+const containerMain = document.getElementById('main-container');
+toogleHistory.addEventListener('click',function(){
+    firstContainer.classList.remove('max-sm:visible');
+    firstContainer.classList.add('max-sm:hidden');
+    containerMain.classList.remove('max-sm:hidden');
+    containerMain.classList.add('max-sm:visible');
+})
+toogleNumber.addEventListener('click',function(){
+
+    firstContainer.classList.add('max-sm:visible');
+    firstContainer.classList.remove('max-sm:hidden');
+    containerMain.classList.add('max-sm:hidden');
+    containerMain.classList.remove('max-sm:visible');
+})
