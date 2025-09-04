@@ -70,3 +70,18 @@ clear.addEventListener('click',function(){
         history.remove();
     }
 })
+
+
+// Number Copy Feature
+const copys = document.getElementsByClassName('js-copy');
+for(let copy of copys)
+{
+    copy.addEventListener('click', function(){
+        const serviceNum = copy.parentNode.parentNode.getElementsByTagName('h2')[0].innerText;
+
+        // New Learing: Used Clipboard API to copy number in clipboard
+        navigator.clipboard.writeText(serviceNum);
+
+        alert('Number Copied-' + serviceNum );
+    })
+}
